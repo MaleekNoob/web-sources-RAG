@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - GOOGLE_CUSTOM_SEARCH_KEY=${GOOGLE_CUSTOM_SEARCH_KEY}
+      - CUSTOM_SEARCH_ENGINE_ID=${CUSTOM_SEARCH_ENGINE_ID}
+      - GOOGLE_GEMINI_API_KEY=${GOOGLE_GEMINI_API_KEY}
+    env_file:
+      - .env
+    volumes:
+      - .:/app

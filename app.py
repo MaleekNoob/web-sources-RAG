@@ -96,7 +96,7 @@ def generate_response(video_transcript, web_snippets, query):
     {video_transcript[:2000]}
 
     === Web Snippets ===
-    {"\n\n".join(web_snippets)}
+    {"\\n\\n".join(web_snippets)}  # Escape backslashes in the f-string
 
     === Task ===
     Provide a **detailed, structured response** to the query: "{query}". 
