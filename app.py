@@ -25,7 +25,7 @@ genai.configure(api_key=os.getenv('GOOGLE_GEMINI_API_KEY'))
 
 # Initialize models
 model = genai.GenerativeModel('gemini-1.5-flash')
-embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+embedding_model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
 
 # Your existing functions (unchanged)
 def extract_video_id(url):

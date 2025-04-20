@@ -1,3 +1,10 @@
-/.env
-/rag-venv
-/visum.pem
+rag-venv/
+*.pyc
+__pycache__/
+.env
+*.pkl
+*.pt
+*.bin
+*.npy
+cache/
+models/
